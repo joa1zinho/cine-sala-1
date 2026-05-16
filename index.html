@@ -10,13 +10,40 @@
         body {
             background-color: #f6610b;
             padding: 20px;
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+        }
+        
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 500px;
+            }
         }
     </style>
 </head>
 <body>
-    <!--parte do julio-->
-    <h1> Bem vindo ao Cinema Sala1</h1>,<!--homepage do site-->
-    <img src="imagens/logo sala1.png" alt="Logo Sala 1" class="logo">
-    <a href="sale.html" decoration="none"><button class="button" ">Ir para pagina de vendas</button></a> <!--botão para a pagina de vendas-->
+    <div class="container">
+        <!--parte do julio-->
+        <h1> Bem vindo ao Cinema Sala1</h1>,<!--homepage do site-->
+        <img src="imagens/logo sala1.png" alt="Logo Sala 1" class="logo">
+        <a href="sale.html" decoration="none"><button class="button" ">Ir para pagina de vendas</button></a> <!--botão para a pagina de vendas-->
+    </div>
 </body>
 </html>

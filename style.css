@@ -1,0 +1,182 @@
+/* Estilo para o título da página */
+h1{
+    text-align: center;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+}
+/* Estilo para o subtítulo da página */
+h2{
+    text-align: center;
+    color: #e4dddd;
+    font-family: 'Montserrat', sans-serif;
+}
+#show{
+    text-align: center;
+    color: #e4dddd;
+    font-family: 'Montserrat', sans-serif;
+}
+/* Estilo do formulário */
+.ticket-form {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-section {
+    margin-bottom: 30px;
+}
+
+.form-section h3 {
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Grid de filmes */
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.movie-option {
+    cursor: pointer;
+}
+
+.movie-option input[type="radio"] {
+    display: none;
+}
+
+.movie-card {
+    text-align: center;
+    padding: 10px;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+.movie-option input[type="radio"]:checked + .movie-card {
+    border-color: #f6610b;
+    background-color: #fff3e0;
+    box-shadow: 0 4px 12px rgba(246, 97, 11, 0.3);
+}
+
+.movie-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.movie-card span {
+    display: block;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Opções de entrada e setor */
+.options-group {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.option input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #f6610b;
+}
+
+.option span {
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    user-select: none;
+}
+
+.option:hover {
+    border-color: #f6610b;
+    background-color: #fff3e0;
+}
+
+.option input[type="radio"]:checked {
+    accent-color: #f6610b;
+}
+
+/* Botão de envio */
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #f6610b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.submit-btn:hover {
+    background-color: #d94a08;
+}
+/*telas pequenas*/
+@media (max-width: 600px) {
+    .ticket-form {
+        margin: 20px 10px;
+        padding: 20px;
+    }
+    
+    .movies-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .movie-card img {
+        height: 200px;
+    }
+    
+    .options-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .option {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 800px) {
+    .ticket-form {
+        max-width: 100%;
+        margin: 20px;
+    }
+    
+    .movies-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

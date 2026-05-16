@@ -42,7 +42,9 @@ h2{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
+    
 }
+
 
 .movie-option {
     cursor: pointer;
@@ -179,4 +181,29 @@ h2{
     .movies-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+}
+
+.logo {
+    display: flex;
+    margin: 20px auto;
+    width: 600px;
+    height: auto;
+}
+.button {
+    display: block;
+    margin: 20px auto;
+    padding: 15px 30px;
+    background-color: #130a05;
+    color: white;
+    border: 2px solid #fff3e0;
+    border-radius: 8px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}button:hover {
+    transition: 0.4s;
+    transform:scale(1.3);
+    background-color: #d94a08;
 }

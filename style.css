@@ -1,3 +1,4 @@
+/*parte do João*/
 /* Estilo para o título da página */
 h1{
     text-align: center;
@@ -182,13 +183,14 @@ h2{
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
+/*Configurações para a logo na pagina inicial*/
 .logo {
     display: flex;
     margin: 20px auto;
     width: 600px;
     height: auto;
 }
+/* Configurações para o botão na pagina inicial */
 .button {
     display: block;
     margin: 20px auto;
@@ -202,7 +204,8 @@ h2{
     font-weight: 700;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}button:hover {
+}
+.button:hover {
     transition: 0.4s;
     transform:scale(1.3);
     background-color: #d94a08;

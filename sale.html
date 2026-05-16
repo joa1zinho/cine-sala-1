@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sala1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/uwt0feg.css"> <!-- Fonte montserrat de adobe fonts -->
+    <style>
+        body {
+            background-color: #f6610b;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class = "title"> <!-- Classe pra titulo-->
+        <h1>Cinema Sala 1</h1> <!--título -->
+        <h2>Escolha seu filme</h2>
+    </div>
+    <h2 id=""><a href="index.html" style="text-decoration: none; color: inherit;">Voltar ao início</a></h2>,<!--parte do julio-->
+    
+    <form class="ticket-form"> <!--parte do Dudu-->
+        <!-- Seção de Filmes -->
+        <div class="form-section">
+            <h3>Filmes em Exibição</h3>
+            <div class="movies-grid">
+                <label class="movie-option">
+                    <input type="radio" name="filme" value="Devoradores de Estrelas" required>
+                    <div class="movie-card">
+                        <img src="imagens/hailmary.jpg" alt="Devoradores de Estrelas">
+                        <span>Devoradores de Estrelas</span>
+                    </div>
+                </label>
+                <label class="movie-option">
+                    <input type="radio" name="filme" value="Michael">
+                    <div class="movie-card">
+                        <img src="imagens/michael.jpg" alt="Michael">
+                        <span>Michael</span>
+                    </div>
+                </label>
+                <label class="movie-option">
+                    <input type="radio" name="filme" value="Super Mario Galaxy - O filme">
+                    <div class="movie-card">
+                        <img src="imagens/The_Super_Mario_Galaxy_poster.jpg" alt="Super Mario Galaxy - O filme">
+                        <span>Super Mario Galaxy - O filme</span>
+                    </div>
+                </label>
+            </div>
+        </div>
+
+        <!-- Seção de Tipo de Entrada -->
+        <div class="form-section">
+            <h3>Tipo de Entrada</h3>
+            <div class="options-group">
+                <label class="option">
+                    <input type="radio" name="entrada" value="Inteira" checked required>
+                    <span>Inteira</span>
+                </label>
+                <label class="option">
+                    <input type="radio" name="entrada" value="Meia">
+                    <span>Meia Entrada</span>
+                </label>
+            </div>
+        </div>
+
+        <!-- Seção de Setor -->
+        <div class="form-section">
+            <h3>Setor</h3>
+            <div class="options-group">
+                <label class="option">
+                    <input type="radio" name="setor" value="Plateia" checked required>
+                    <span>Plateia</span>
+                </label>
+                <label class="option">
+                    <input type="radio" name="setor" value="Mezanino">
+                    <span>Mezanino</span>
+                </label>
+            </div>
+        </div>
+
+        <button type="submit" class="submit-btn">Comprar Ingresso</button>
+    </form>
+</body>
+</html>
